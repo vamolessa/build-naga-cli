@@ -43,7 +43,7 @@ jobs:
 
       - name: Run Cargo Build
         id: build
-        run: cargo build --release --bin naga-cli
+        run: cargo build --release --bin naga
 
       - name: Move Artifact
         shell: sh
