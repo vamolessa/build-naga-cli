@@ -47,7 +47,7 @@ jobs:
 
       - name: Move Artifact
         shell: sh
-        run: cp target/release/naga-cli.exe naga-win-${{ matrix.arch }}-${{ needs.info.outputs.BUILD_DATE }}.exe
+        run: cp target/release/naga.exe naga-win-${{ matrix.arch }}-${{ needs.info.outputs.BUILD_DATE }}.exe
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
